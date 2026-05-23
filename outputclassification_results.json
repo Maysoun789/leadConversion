@@ -1,0 +1,110 @@
+{
+  "dataset_info": {
+    "total_samples": 20000,
+    "n_features": 128,
+    "train_samples": 16000,
+    "test_samples": 4000,
+    "target_distribution": {
+      "class_0": 10709,
+      "class_1": 9291,
+      "class_0_pct": 53.55,
+      "class_1_pct": 46.45
+    }
+  },
+  "feature_breakdown": {
+    "numeric_keyword_features": 23,
+    "decision_level_onehot": 5,
+    "tfidf_features": 100,
+    "total_features": 128
+  },
+  "cv_results": {
+    "XGBoost": {
+      "cv_accuracy_mean": 0.8078,
+      "cv_accuracy_std": 0.009,
+      "cv_f1_mean": 0.7846,
+      "cv_f1_std": 0.0093,
+      "cv_auc_mean": 0.8963,
+      "cv_auc_std": 0.0056
+    },
+    "LightGBM": {
+      "cv_accuracy_mean": 0.8093,
+      "cv_accuracy_std": 0.0087,
+      "cv_f1_mean": 0.784,
+      "cv_f1_std": 0.0096,
+      "cv_auc_mean": 0.897,
+      "cv_auc_std": 0.0053
+    },
+    "Random Forest": {
+      "cv_accuracy_mean": 0.8102,
+      "cv_accuracy_std": 0.008,
+      "cv_f1_mean": 0.7818,
+      "cv_f1_std": 0.009,
+      "cv_auc_mean": 0.8872,
+      "cv_auc_std": 0.0051
+    }
+  },
+  "test_results": {
+    "XGBoost": {
+      "accuracy": 0.822,
+      "precision": 0.8391,
+      "recall": 0.7632,
+      "f1_score": 0.7993,
+      "auc_roc": 0.9039,
+      "avg_precision": 0.8989,
+      "confusion_matrix": [
+        [
+          1870,
+          272
+        ],
+        [
+          440,
+          1418
+        ]
+      ]
+    },
+    "LightGBM": {
+      "accuracy": 0.822,
+      "precision": 0.8469,
+      "recall": 0.753,
+      "f1_score": 0.7972,
+      "auc_roc": 0.9043,
+      "avg_precision": 0.8994,
+      "confusion_matrix": [
+        [
+          1889,
+          253
+        ],
+        [
+          459,
+          1399
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.823,
+      "precision": 0.8519,
+      "recall": 0.7492,
+      "f1_score": 0.7973,
+      "auc_roc": 0.8965,
+      "avg_precision": 0.8908,
+      "confusion_matrix": [
+        [
+          1900,
+          242
+        ],
+        [
+          466,
+          1392
+        ]
+      ]
+    }
+  },
+  "best_model": "XGBoost",
+  "best_model_metrics": {
+    "f1_score": 0.7993,
+    "auc_roc": 0.9039,
+    "accuracy": 0.822,
+    "precision": 0.8391,
+    "recall": 0.7632
+  }
+}
