@@ -213,7 +213,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = 'DejaVu Sans'
 plt.rcParams['axes.unicode_minus'] = False
 
-output_dir = r"C:\Users\dridi\Downloads\Mayssa\output"
+output_dir = r"C:\Users\DELL\project_mayssa\output"
 colors = {'XGBoost': '#1f77b4', 'LightGBM': '#ff7f0e', 'Random Forest': '#2ca02c'}
 
 # --- ROC Curves ---
